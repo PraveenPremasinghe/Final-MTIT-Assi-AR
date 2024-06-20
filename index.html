@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
+      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <title>IT2040 – MTIT Augmented Reality Assignment (AR)- 02</title>
+   </head>
+   
+   <body>
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Travel</a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#discover" class="nav__link">Discover</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#place" class="nav__link">Places</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-function-line"></i>
+            </div>
+         </nav>
+      </header>
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home" id="home">
+            <img src="assets/img/home20.png" alt="" class="home__img">
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <span class="home__data-subtitle">Discover your place</span>
+                  <h1 class="home__data-title">Explore The <br> Best <b>Beautiful <br> Beaches</b></h1>
+                  <a href="#" class="button" data-toggle="modal" data-target="#Scanmemodal">Scan Me Now</a>
+               </div>
+               <div class="home__social">
+                  <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                  <i class="ri-facebook-box-fill"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                  <i class="ri-instagram-fill"></i>
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                  <i class="ri-twitter-fill"></i>
+                  </a>
+               </div>
+            </div>
+         </section>
+         <!-- ////////////////modal///////////// -->
+         <!-- Modal -->
+         <div class="modal fade" id="Scanmemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLongTitle">Open with your mobile phone</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body" style=" display: block;
+                     margin-left: auto;
+                     margin-right: auto;">
+                     <img src="frame.png" alt="" srcset="">
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ////////////////modal///////////// -->
+         <!--==================== DISCOVER ====================-->
+         <section class="discover section" id="discover">
+            <h2 class="section__title">Discover the most  <br> attractive places Using Augmented Reality </h2>
+<div class="scanmebtn" style="margin-left: 45%; text-decoration: none;">
+   <a href="#" class="button" data-toggle="modal" data-target="#Scanmemodal">Scan Me Now</a>
+</div>
+            
+
+
+            <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="sigitiya.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sigiriya </h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="yala.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Yala National Park</h2>
+                                <span class="discover__description">15 tours available</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="beach.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Hikkaduwa Beach</h2>
+                                <span class="discover__description">18 tours available</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="nuwara.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Nuwara Eliya</h2>
+                                <span class="discover__description">32 tours available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         </section>
+
+
+
+         <h2 class="section__title">Discover the most  <br> attractive places Using Augmented Reality </h2>
+
+
+<div class="row ">
+
+   <div class="col-sm-6">
+      
+      <img src="pattern-sigiriya.png" class="rounded mx-auto d-block" alt="...">
+   </div>
+   <div class="col-sm-6">
+      <img src="pattern-nuwa.png" class="rounded mx-auto d-block" alt="...">
+   </div>
+   <div class="col-sm-6">
+      <img src="pattern-bech.png" class="rounded mx-auto d-block" alt="...">
+   </div>
+   <div class="col-sm-6">
+      <img src="pattern-yala.png" class="rounded mx-auto d-block" alt="...">
+   </div>
+</div>
+
+
+
+
+<h2 class="section__title">Discover the most  <br> a3D VIEW </h2>
+
+
+<div class="row ">
+
+   <div class="col-sm-6">
+      
+      <img src="pattern-sigiriya.png" class="rounded mx-auto d-block" alt="...">
+   </div>
+   <div class="col-sm-6">
+      <img src="pattern-nuwa.png" class="rounded mx-auto d-block" alt="...">
+   </div>
+   <div class="col-sm-6">
+      <img src="pattern-bech.png" class="rounded mx-auto d-block" alt="...">
+   </div>
+   <div class="col-sm-6">
+      <img src="pattern-yala.png" class="rounded mx-auto d-block" alt="...">
+   </div>
+</div>
+
+
+
+         <!--==================== EXPERIENCE ====================-->
+         <section class="experience section">
+            <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+            <div class="experience__container container grid">
+               <div class="experience__content grid">
+                  <div class="experience__data">
+                     <h2 class="experience__number">20</h2>
+                     <span class="experience__description">Year <br> Experience</span>
+                  </div>
+                  <div class="experience__data">
+                     <h2 class="experience__number">75</h2>
+                     <span class="experience__description">Complete <br> tours</span>
+                  </div>
+                  <div class="experience__data">
+                     <h2 class="experience__number">650+</h2>
+                     <span class="experience__description">Tourist <br> Destination</span>
+                  </div>
+               </div>
+               <div class="experience__img grid">
+                  <div class="experience__overlay">
+                     <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+                  </div>
+                  <div class="experience__overlay">
+                     <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!--==================== FOOTER ====================-->
+      <footer class="footer section">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <div class="footer__data">
+                  <h3 class="footer__title">Travel</h3>
+                  <p class="footer__description">Travel you choose the <br> destination, 
+                     we offer you the <br> experience.
+                  </p>
+                  <div>
+                     <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                     <i class="ri-facebook-box-fill"></i>
+                     </a>
+                     <a href="https://twitter.com/" target="_blank" class="footer__social">
+                     <i class="ri-twitter-fill"></i>
+                     </a>
+                     <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                     <i class="ri-instagram-fill"></i>
+                     </a>
+                     <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                     <i class="ri-youtube-fill"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="footer__data">
+                  <h3 class="footer__subtitle">About</h3>
+                  <ul>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">About Us</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">Features</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">New & Blog</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__data">
+                  <h3 class="footer__subtitle">Company</h3>
+                  <ul>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">Team</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">Plan y Pricing</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">Become a member</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__data">
+                  <h3 class="footer__subtitle">Support</h3>
+                  <ul>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">FAQs</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">Support Center</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="" class="footer__link">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer__rights">
+               <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+               <div class="footer__terms">
+                  <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                  <a href="#" class="footer__terms-link">Privacy Policy</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+      </a>
+      <!--=============== SCROLL REVEAL===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

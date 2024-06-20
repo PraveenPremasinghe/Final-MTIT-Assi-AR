@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>IT2040 – MTIT Augmented Reality Assignment - 02</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+    
+    <script src="http://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body style="margin : 0px; overflow: hidden;">
+
+
+
+ 
+    <a-scene embedded arjs>
+
+
+     
+
+        <!-- IT19060286-M.A.P.R.Premasinghe -->
+        <a-marker type='pattern' url="pattern-sigiriya.patt">
+
+          <a-text color="#000" value="Sigiriya - M.A.P.R.Premasinghe" position="-0.9 0 -1.1" rotation="-90 0 0" scale="0.6 0.6 0.6"></a-text>
+        
+          <a-image src="sigiriya.png"  position="-0.7 0 0" rotation="-90 0 0"  id="ground" height="2" width="2" ></a-image>
+
+      </a-marker>
+      <a-entity camera></a-entity>
+
+
+      <!-- It19034164-Wehella V.W -->
+
+      <a-marker type='pattern' url="pattern-nuwa.patt">
+   
+        <a-text color="#000" value="Nuwara Eliya - Wehella V.W" position="-0.9 0 -1.1" rotation="-90 0 0" scale="0.6 0.6 0.6"></a-text>
+        
+        <a-image src="Nuwara Eliya.png"  position="-0.7 0 0" rotation="-90 0 0"  id="ground" height="2" width="2" ></a-image>
+        
+               
+
+              </a-marker>
+
+              <a-entity camera></a-entity>
+              
+       <!-- IT19062334 Ranasinghe S.A.S.K -->
+      
+       <a-marker type='pattern' url="pattern-yala.patt">
+   
+        <a-text color="#000" value="Yala National Park - Ranasinghe S.A.S.K" position="-0.9 0 -1.1" rotation="-90 0 0" scale="0.6 0.6 0.6"></a-text>
+        
+        <a-image src="Yala-National Park.png"  position="-0.7 0 0" rotation="-90 0 0"  id="ground" height="2" width="2" ></a-image>
+        
+            
+
+              </a-marker>
+              <a-entity camera></a-entity>
+              
+         <!-- IT19365374 Nimsara S.J.J.C -->
+      
+         <a-marker type='pattern' url="pattern-bech.patt">
+   
+          <a-text color="#000" value="Hikkaduwa Beach - Nimsara S.J.J.C" position="-0.9 0 -1.1" rotation="-90 0 0" scale="0.6 0.6 0.6"></a-text>
+          
+          <a-image src="Hikkaduwa Beach.png"  position="-0.7 0 0" rotation="-90 0 0"  id="ground" height="2" width="2" ></a-image>
+            
+                  
+                </a-marker>
+                <a-entity camera></a-entity>
+                
+    </a-scene>
+  </body>
+</html>
